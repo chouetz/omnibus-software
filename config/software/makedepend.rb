@@ -64,7 +64,7 @@ build do
   license "BSD-3-Clause"
   license_file "https://raw.githubusercontent.com/ioerror/makedepend/master/LICENSE"
 
-  command "./configure --prefix=#{install_dir}/embedded", env: configure_env
+  configure env: configure_env
   command "make -j #{workers}", env: configure_env
   command "make -j #{workers} install", env: configure_env
 end
