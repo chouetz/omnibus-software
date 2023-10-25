@@ -48,9 +48,9 @@ build do
            "--without-gnutls",
            "--without-librtmp",
            "--without-libssh2",
-           "--with-ssl=#{install_dir}/embedded",
-           "--with-zlib=#{install_dir}/embedded",
-           "--with-nghttp2=#{install_dir}/embedded"
+           "--with-ssl",
+           "--with-zlib",
+           "--with-nghttp2",
   ]
   configure *configure_options
 
