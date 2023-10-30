@@ -46,7 +46,7 @@ build do
            "--enable-proxy",
            "--disable-dependency-tracking",
            "--enable-ipv6",
-           "--without-libidn",
+           "--without-libidn2",
            "--without-gnutls",
            "--without-librtmp",
            "--without-libssh2",
