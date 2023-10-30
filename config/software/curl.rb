@@ -33,8 +33,7 @@ build do
     FileUtils.rm_rf(File.join(project_dir, "src/tool_hugehelp.c"))
   end
 
-  # curl requires pkg-config that is shipped with the agent
-  env = { "PATH" => "#{install_dir}/embedded/bin" + File::PATH_SEPARATOR + ENV["PATH"] }
+  env = with_standard_compiler_flags(with_embedded_path)
   configure_options = [
            "--disable-manual",
            "--disable-debug",
