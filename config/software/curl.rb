@@ -50,7 +50,7 @@ build do
            "--without-gnutls",
            "--without-librtmp",
            "--without-libssh2",
-           "--with-ssl",
+           "--with-openssl",
            "--with-zlib",
            "--with-nghttp2",
   ]
